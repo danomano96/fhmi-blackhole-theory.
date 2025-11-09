@@ -14,7 +14,7 @@
 
 This repository implements a **three-dimensional, time-dependent simulation** of a black hole event horizon using the **membrane paradigm** [Thorne, Price & Macdonald, 1986]. The horizon is modeled as a **viscous 2D fluid sphere** undergoing **radial "breathing" perturbations** that propagate as damped waves and disperse entropy across the surface.
 
-Key features:
+Key 
 - **Exact entropy tracking**: \( \delta S(t) = \frac{1}{4} [A(t) - A_0] \)
 - **Quasinormal mode (QNM) reproduction** from fluid dynamics
 - **Infalling particle triggers**
