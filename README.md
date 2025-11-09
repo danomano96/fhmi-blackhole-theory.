@@ -86,4 +86,3 @@ u(\theta,\phi,t) \to u + A_0 \exp\!\left[-\frac{(\theta-\theta_0)^2 + (\phi-\phi
 Mimics **Vaidya metric** accretion; triggers QNM ringing.
 
 ---
-
