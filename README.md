@@ -87,9 +87,22 @@ Mimics **Vaidya metric** accretion; triggers QNM ringing.
 
 ---
 
-## Installation
+# Breathing Black Hole Membrane – 3D Interactive Models
 
-```bash
-git clone https://github.com/yourusername/bh-breathing-membrane.git
-cd bh-breathing-membrane
-pip install -e .[all]
+**Live 3D visualizations of a black hole horizon undergoing "breathing" perturbations using the membrane paradigm.**
+
+[![GitHub](https://img.shields.io/github/stars/yourusername/bh-breathing-membrane?style=social)](https://github.com/yourusername/bh-breathing-membrane)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+---
+
+## Interactive 3D Models (Click to Rotate, Zoom, Pan)
+
+> **All models are `.glb` files — GitHub renders them natively!**
+
+---
+
+### Model 1: Initial Localized Perturbation (t = 0)
+
+```glb
+models/initial_bump.glb
