@@ -11,9 +11,3 @@ A 3D numerical model of black hole horizon dynamics using the **membrane paradig
 - **Entropy**: \( \delta S(t) = \frac{1}{4} [A(t) - A_0] \), with exact area integral.
 - **Features**: QNM validation, infalling triggers, GW extraction.
 
-## Quick Start
-```bash
-git clone https://github.com/yourusername/bh-breathing-membrane.git
-cd bh-breathing-membrane
-pip install -e .[dev]
-jupyter
