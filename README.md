@@ -44,4 +44,52 @@ This model **reproduces the ringdown phase** of binary black hole mergers as see
 
 ## Mathematical Models
 
-We
+We implement **three progressively sophisticated models**:
+
+---
+
+### 1. **Linear Breathing Mode** *(Default)*
+
+Governed by the **damped scalar wave equation on the 2-sphere**:
+\[
+\boxed{
+\partial_t^2 u = c^2 \nabla^2_{\text{sph}} u - \gamma \partial_t u
+}
+\]
+- \( u(\theta,\phi,t) \): radial displacement from \( r_0 = 2M \)
+- \( c = 1 \): light speed on horizon
+- \( \gamma \): damping from viscosity \( \eta/s = 1/(4\pi) \)
+
+**Entropy perturbation**:
+\[
+\delta S(t) = \frac{1}{4} \iint (r_0 + u)^2 \sin\theta \, d\theta d\phi - \pi r_0^2
+\]
+
+---
+
+### 2. **Nonlinear Extension** *(Optional)*
+
+For large amplitudes, include geometric nonlinearity:
+\[
+\partial_t^2 u = c^2 \left[ \nabla^2 u + \frac{2u}{r_0^2} (\nabla u)^2 \right] - \gamma \partial_t u
+\]
+Captures **horizon locking** and **turbulent cascades**.
+
+---
+
+### 3. **Infalling Particle Trigger**
+
+Simulate matter crossing the horizon:
+\[
+u(\theta,\phi,t) \to u + A_0 \exp\!\left[-\frac{(\theta-\theta_0)^2 + (\phi-\phi_0)^2}{2\sigma^2}\right] \cdot e^{-(t-t_0)^2/\tau^2}
+\]
+Mimics **Vaidya metric** accretion; triggers QNM ringing.
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/yourusername/bh-breathing-membrane.git
+cd bh-breathing-membrane
+pip install -e .[all]
