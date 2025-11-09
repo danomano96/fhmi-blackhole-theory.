@@ -87,4 +87,3 @@ Mimics **Vaidya metric** accretion; triggers QNM ringing.
 
 ---
 
-#
